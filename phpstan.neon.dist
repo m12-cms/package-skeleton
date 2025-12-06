@@ -1,0 +1,18 @@
+includes:
+  - vendor/nunomaduro/larastan/extension.neon
+  - vendor/nunomaduro/larastan/rules.neon
+
+parameters:
+  paths:
+    - src
+    - tests
+
+  level: 6
+
+  checkMissingIterableValueType: false
+
+  ignoreErrors:
+    - '#missingType\.generics#'
+
+  parallel:
+    maxWorkerMemory: 1024
